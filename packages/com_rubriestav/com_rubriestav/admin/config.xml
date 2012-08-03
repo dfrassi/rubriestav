@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<params>
+	
+		<param name="rubriestav" type="radio" default="1" label="Importa da rubriestav" description="Leggi i dati dei dipendenti rubriestav">
+			<option value="1" >Si</option>
+			<option value="2">No</option>
+		</param>	<param name="image_maxsize_upload" type="text" size="20" default="1500000"/>
+	
+		
+	</params>
+	
+	<fieldset
+			name="permissions"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			description="JCONFIG_PERMISSIONS_DESC"
+		>
+			<field
+				name="rules"
+				type="rules"
+				label="JCONFIG_PERMISSIONS_LABEL"
+				class="inputbox"
+				validate="rules"
+				filter="rules"
+				component="com_rubriestav"
+				section="component"
+			/>
+	</fieldset>
+</config>
+<!-- in questo file ci stanno i parametri che vengono visualizzati come una finestra di popup nel 
+componente -->

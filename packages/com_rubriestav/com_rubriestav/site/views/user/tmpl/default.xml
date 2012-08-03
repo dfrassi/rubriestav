@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Utenti Estav">
+		<message>
+			<![CDATA[ARTICLE SUBMISSION LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Utenti Estav</name>
+		<description>Lista di utenti rubrica Estav</description>
+		<params>
+		<param name="controller" type="text" default="user_detail"/>
+		<param name="task" type="text" default="edit"/>
+		<param name="view" type="text" default="reset"/>
+		</params>
+	</state>
+</metadata>

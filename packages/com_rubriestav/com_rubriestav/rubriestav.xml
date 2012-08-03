@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+    <name>com_rubriestav</name>
+    <author>David Frassi</author>
+    <authorEmail>info@davidfrassi.it</authorEmail>
+    <authorUrl>http://www.davidfrassi.it/</authorUrl>
+    <copyright>(C) 2006-2012 David Frassi. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>3.0.2</version>
+    <creationDate>April 10, 2012</creationDate>
+    <description>RUBRIESTAV_COMPONENT_DESCRIPTION</description>
+
+    <scriptfile>admin/install.rubriestav.php</scriptfile>
+    
+    <install>
+	<sql>
+	    <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+	</sql>
+    </install>
+
+    <uninstall>
+	<sql>
+	    <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+	</sql>
+    </uninstall>
+
+
+    <files folder="site">
+    <filename>rubriestav.php</filename>
+    <folder>assets</folder>
+    <folder>controllers</folder>
+    <folder>helpers</folder>
+    <folder>lang</folder>
+    <folder>models</folder>
+    <folder>tables</folder>
+    <folder>views</folder>
+    </files>
+    
+   <languages folder="site/lang">
+       			<language tag="it-IT">it-IT.com_rubriestav.ini</language>
+   </languages> 
+   
+    <media destination="com_rubriestav" folder="media">
+           <folder>images</folder>
+       </media>
+
+
+   <administration>
+           <menu>COM_RUBRIESTAV_MENU</menu>
+           <files folder="admin">
+               <filename>index.html</filename>
+               <filename>config.xml</filename>
+               <filename>access.xml</filename>
+               <filename>admin.rubriestav.php</filename>
+               <filename>install.rubriestav.php</filename>
+               <folder>assets</folder>
+               <folder>sql</folder>
+               <folder>tables</folder>
+               <folder>models</folder>
+               <folder>views</folder>
+               <folder>controllers</folder>
+               <folder>helpers</folder>
+               <folder>lang</folder>
+           </files>
+   
+   		<languages folder="admin/lang">
+   			<language tag="it-IT">it-IT.com_rubriestav.ini</language>
+   		</languages> 
+    </administration>
+
+</extension>
